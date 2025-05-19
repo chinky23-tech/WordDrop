@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main-color: #ffffff;
+  --primary-color: #eeeeee;
+ --hero-color: #E8E8E8;
+ --text-color: #1B1B1B;
+ --btn-color: #6A6A6A;
+ --yt-bk: #bb0000;
+ --tw-bk: #55ACEE;
+ --inst-bk:#125688;
+ --fb-bk:#3B5998;
+ --rgpa: rgba(0, 0, 0, 0.2);
+ --gray-color: #333;
+
+}
+.hero-top-quotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--hero-color);
+    box-shadow: 0 4px 12px var(--text-color);
+    padding: 20px;
+    
+    font-size: 1em;
+    text-align: center;
+}
+   .hero-top-quotes h1{
+    font-size: 2.5em;
+    color: var(--text-color);
+    text-align: center;
+    margin: 40px;
+    text-align: center;
+    margin: 40px;
+}
+.hero-top-quotes p{
+    font-size: 1.2em;
+    color: var(--gray-color);
+    text-align: center;
+    margin: 15px;
+}
+
+.top-quotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.filter-options .like-btn,
+.filter-options .share-btn {
+  padding: 10px 20px;
+ 
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.filter-options .like-btn {
+  background-color: var(--main-color);
+  color: var(--yt-bk);
+  box-shadow: 0px 2px 3px var(--text-color);
+}
+
+
+
+.filter-options .share-btn {
+  background-color: var(--main-color);
+  color: var(--fb-bk);
+  box-shadow: 0px 2px 3px var(--text-color);
+}
+
+
+
+
+#search {
+    margin: 20px;
+  padding: 12px 20px;
+  width: 80%;
+  max-width: 380px;
+  background-color: var(--hero-color);
+  
+  border-radius: 25px;
+  border: 1px solid var(--btn-color);
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+#search:focus{
+ 
+  border-color: var(--text-color);
+  
+}
+
+.quote-card{
+  
+text-align: center;
+     padding: 20px;
+    margin: 20px auto;
+    box-shadow: 3px 3px var(--primary-color), -1em 0 0.4em var(--hero-color);
+    border-radius: 10px;
+    font-size: 1.2em;
+    max-width: 1200px;
+
+}
+
+
+
+.quote-card p {
+  font-size: 1rem;
+  color: var(--gray-color);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+  .hero-top-quotes h1{
+    font-size: 1.4em;
+  }
+  .hero-top-quotes p{
+    font-size: 1.2em ;
+  }
+}
