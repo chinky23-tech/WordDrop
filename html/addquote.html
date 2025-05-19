@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Pen</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/addquote.css">
+  <link rel="stylesheet" href="../css/quote.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="../html/index.html">QuotePen</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()"> 
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../html/addquote.html">Add-Quote</a></li>
+      <li><a href="../html/topquote.html">Top-Quote</a></li>
+      <li><a href="../html/browsequote.html">Browse-Quote</a></li>
+       <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+      <section class="hero" id="hero-menu">
+        <h1>Quote Collection</h1>
+        <p>Share your favorite quotes and discover new ones!</p>
+       <button id="addQuoteBtn">Add Quote</button>
+        
+      </section>
+    <main>
+       
+
+      
+         <div class="modal-overlay" id="quoteModal">
+            <div class="modal-content">
+               
+                <h2>Add Your Quote</h2>
+                <form id="quoteForm">
+                    <div class="form-group">
+                        <label for="quoteText">Quote Text*</label>
+                        <textarea id="quoteText" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteAuthor">Author*</label>
+                        <input type="text" id="quoteAuthor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteCategory">Category*</label>
+                        <select id="quoteCategory" required>
+                            <option value="">Select a category</option>
+                            <option value="motivational">Motivational</option>
+                            <option value="inspirational">Inspirational</option>
+                            <option value="nature">Nature</option>
+                            <option value="life">Life</option>
+                            <option value="wisdom">Wisdom</option>
+                        </select>
+                    </div>
+        
+                
+                
+                <div class="form-actions">
+                  <button type="submit">Submit Quote</button>
+                  <button type="button" id="cancelBtn">Cancel</button>
+                </div>
+               
+                
+                
+            </form>
+            </div>
+        </div>
+        </main>
+
+        <section class="featured-quotes">
+  <h2>Today's Featured Quotes</h2>
+  <div class="carousel">
+   
+    <div class="quote-card">
+      <p>"The only way to do great work is to love what you do."</p>
+      <span>— Steve Jobs (Motivational)</span>
+      <div class="quote-actions">
+        <button class="like-btn">♥ 24</button>
+        <button class="share-btn">Share</button>
+      </div>
+    </div>
+   
+    <div class="quote-card">
+      <p>"Life is what happens when you're busy making other plans."</p>
+      <span>— John Lennon (Inspirational)</span>
+      <div class="quote-actions">
+        <button class="like-btn">♥ 18</button>
+        <button class="share-btn">Share</button>
+      </div>
+  </div>
+    <div class="quote-card">
+      <p>"The best way to predict the future is to create it."</p>
+      <span>— Peter Drucker (Motivational)</span>
+      <div class="quote-actions">
+        <button class="like-btn">♥ 30</button>
+        <button class="share-btn">Share</button>
+      </div>
+    </div>
+    <div class="quote-card">
+      <p>"In the end, we will remember not the words of our enemies, but the silence of our friends."</p>
+      <span>— Martin Luther King Jr. (Inspirational)</span>
+      <div class="quote-actions">
+        <button class="like-btn">♥ 22</button>
+        <button class="share-btn">Share</button>
+      </div>
+    </div>
+    <div class="quote-card">
+      <p>"The future belongs to those who believe in the beauty of their dreams."</p>
+      <span>— Eleanor Roosevelt (Motivational)</span>
+      <div class="quote-actions">
+        <button class="like-btn">♥ 15</button>
+        <button class="share-btn">Share</button>
+      </div>
+      </div>
+      <div class="quote-card">
+        <p>"The only limit to our realization of tomorrow will be our doubts of today."</p>
+        <span>— Franklin D. Roosevelt (Inspirational)</span>
+        <div class="quote-actions">
+          <button class="like-btn">♥ 10</button>
+          <button class="share-btn">Share</button>
+        </div>
+        </div>
+        <div class="quote-card">
+          <p>"In the end, we will remember not the words of our enemies, but the silence of our friends."</p>
+          <span>— Martin Luther King Jr. (Inspirational)</span>
+          <div class="quote-actions">
+            <button class="like-btn">♥ 12</button>
+            <button class="share-btn">Share</button>
+          </div>
+          </div>
+          <div class="quote-card">
+            <p>"The future belongs to those who believe in the beauty of their dreams."</p>
+            <span>— Eleanor Roosevelt (Motivational)</span>
+            <div class="quote-actions">
+              <button class="like-btn">♥ 8</button>
+              <button class="share-btn">Share</button>
+            </div>
+            </div>
+            <div class="quote-card">
+              <p>"The only limit to our realization of tomorrow will be our doubts of today."</p>
+              <span>— Franklin D. Roosevelt (Inspirational)</span>
+              <div class="quote-actions">
+                <button class="like-btn">♥ 5</button>
+                <button class="share-btn">Share</button>
+              </div>
+              </div>
+              <div class="quote-card">
+                <p>"In the end, we will remember not the words of our enemies, but the silence of our friends."</p>
+                <span>— Martin Luther King Jr. (Inspirational)</span>
+                <div class="quote-actions">
+                  <button class="like-btn">♥ 3</button>
+                  <button class="share-btn">Share</button>
+                </div>
+                </div>
+                <div class="quote-card">
+                  <p>"The future belongs to those who believe in the beauty of their dreams."</p>
+                  <span>— Eleanor Roosevelt (Motivational)</span>
+                  <div class="quote-actions">
+                    <button class="like-btn">♥ 1</button>
+                    <button class="share-btn">Share</button>
+                  </div>
+                  </div>
+        
+</section>
+
+
+<footer>
+  <div class="footer">
+
+    <div class="footer-column">
+      <h5>Company</h5>
+      <ul>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+        <li>Interest Based Ads</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h5>Work with us</h5>
+      <ul>
+        <li>Authors</li>
+        <li>Advertise</li>
+        <li>Authors & ads blog</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h5>CONNECT</h5>
+      <ul class="social-icons">
+        <li><a href="#" class="fa fa-youtube"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+        <li><a href="#" class="fa fa-facebook"></a></li>
+   
+      </ul>
+    </div>
+
+    <p class="copyright">© 2024 QuotePen, Inc.</p>
+  </div>
+</footer>
+
+    <script src="../js/addquote.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/menu.js"></script>
+    </body>
+    </html>
