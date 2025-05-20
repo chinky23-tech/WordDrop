@@ -16,6 +16,7 @@
  --fb-bk:#3B5998;
  --rgpa: rgba(0, 0, 0, 0.2);
  --gray-color: #333;
+ --in-color: #007bb5;
 
 }
 body{
@@ -208,101 +209,58 @@ background-color: var(--primary-color);
   } 
 }
 
-
-
-.footer {
-  background-color:var(--primary-color);
-  color: var(--text-color);
+.quote-footer {
+  background-color: var(--primary-color);
+  color: var(--gray-color);
+  text-align: center;
   padding: 40px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
-.footer-column {
-
-  flex: 1 1 200px;
-  margin-left: 10em;
-  
-  
+.quote-footer .footer-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.footer h5 {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: var(--text-color);
-}
-
-.footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer li {
-  margin-bottom: 8px;
-  font-size: 14px;
-}
-
-.footer li a {
-  text-decoration: none;
-  color: var(--main-color);
-  transition: color 0.3s;
-}
-
-
-  
-
-.social-icons {
-  display: flex;
-  
-  padding-top: 5px;
-  
-}
-
-.social-icons li {
-  margin-right: 10px;
+.quote-footer .tagline {
+  font-style: italic;
   font-size: 18px;
-  
+  margin-bottom: 20px;
 }
 
-.fa-youtube{
-  background: var(--yt-bk);
-  color: var(--main-color);
-  border-radius: 50px;
-  padding: 8px 9px 8px 9px;
-  
+
+.fab {
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
 }
-.fa-twitter {
-  background: var(--tw-bk);
+.fa-facebook-f{
+    background: var(--fb-bk);
   color: var(--main-color);
-  border-radius: 50px;
-  padding: 8px 9px 8px 9px;
 }
-.fa-instagram {
+.fa-twitter{
+background: var(--tw-bk);
+  color: var(--main-color);
+}
+.fa-instagram{
   background: var(--inst-bk);
   color: var(--main-color);
-  border-radius: 50px;
-  padding: 8px 9px 8px 9px;
 }
-.fa-facebook {
-  background: var(--fb-bk);
+.fa-linkedin-in{
+  background: var(--in-color);
   color: var(--main-color);
-  border-radius: 50px;
-  padding: 8px 12px 8px 12px;
 }
 
 
-.footer .copyright {
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-  font-size: 13px;
+.quote-footer .copyright {
+  font-size: 14px;
+  margin-top: 20px;
   color: var(--text-color);
 }
-
 
 @media (max-width: 768px) {
   .footer {
